@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the below survey</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Johnny Rose" /></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="example@email.com" /></label>
+      <label for="number" id="number-label">Number: <input id="number" type="number" min="18" max="100" placeholder="123..." /></label>
+      <label for="dropdown" id="dropdown-label">Choose one: <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Option one</option>
+        <option value="2">Option two</option>
+      </select>
+    </form>
 </body>
 </html>
