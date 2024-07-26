@@ -1,23 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Survey Form</title>
-</head>
-<body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Please fill out the below survey</p>
-    <form id="survey-form">
-      <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Johnny Rose" /></label>
-      <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="example@email.com" /></label>
-      <label for="number" id="number-label">Number: <input id="number" type="number" min="18" max="100" placeholder="123..." /></label>
-      <label for="dropdown" id="dropdown-label">Choose one: <select id="dropdown">
-        <option value="">(select one)</option>
-        <option value="1">Option one</option>
-        <option value="2">Option two</option>
-      </select>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="styles.css"
+        />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the below survey</p>
+        <form
+            action="#"
+            method="post"
+            id="survey-form"
+        ></form>
+        <form id="survey-form">
+            <label
+                for="name"
+                id="name-label"
+                >Name:
+                <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="Johnny Rose"
+            /></label>
+            <label
+                for="email"
+                id="email-label"
+                >Email:
+                <input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="example@email.com"
+            /></label>
+            <label
+                for="number"
+                id="number-label"
+                >Number:
+                <input
+                    id="number"
+                    type="number"
+                    min="18"
+                    max="100"
+                    placeholder="123..."
+            /></label>
+            <fieldset>
+                <label
+                    for="dropdown"
+                    id="dropdown-label"
+                    >Choose one:
+                    <select
+                        id="dropdown"
+                        class="inline"
+                    >
+                        <option value="">(select one)</option>
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                    </select></label
+                >
+                <label for="personal-account"
+                    ><input
+                        type="radio"
+                        id="personal-account"
+                        name="account-type"
+                        class="inline"
+                        value="personal"
+                        checked
+                    />Personal</label
+                >
+                <label for="professional-account"
+                    ><input
+                        type="radio"
+                        id="professional-account"
+                        name="account-type"
+                        class="inline"
+                        value="professional"
+                    />Professional</label
+                >
+            </fieldset>
+            <fieldset>
+                <label for="email-checkbox"
+                    ><input
+                        type="checkbox"
+                        id="email-checkbox"
+                        value="email-opt-in"
+                        class="inline"
+                    />I am interested in getting email updates</label
+                >
+                <label for="volunteer-checkbox"
+                    ><input
+                        type="checkbox"
+                        id="volunteer-checkbox"
+                        value="volunteer-opt-in"
+                        class="inline"
+                    />I am interested in volunteering</label
+                >
+            </fieldset>
+            <fieldset>
+                <label for="bio"
+                    >Tell us about yourself:
+                    <textarea
+                        id="bio"
+                        rows="3"
+                        cols="40"
+                        placeholder="Share a short bio"
+                    ></textarea>
+                </label>
+            </fieldset>
+            <button
+                type="submit"
+                id="submit"
+            >
+                Submit
+            </button>
+        </form>
+    </body>
 </html>
