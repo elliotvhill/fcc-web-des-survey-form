@@ -2,9 +2,46 @@ body {
     margin: 1em auto;
     width: 100%;
     font-family: Helvetica, sans-serif;
-  }
-  
-  input {
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+input {
     display: block;
     margin: 0 auto;
-  }
+}
+
+.inline {
+    display: inline;
+    margin: 0 0.5em 0 0;
+}
+
+select {
+    margin: 0.5em;
+    display: block;
+}
+
+input[type="number"] {
+    min-width: 30%;
+}
+
+fieldset {
+    margin: 0.5em;
+    border: 1px solid black;
+}
+
+textarea {
+    margin: 0.5em 0;
+}
